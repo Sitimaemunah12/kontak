@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sekolah{% endblock title %}
+{% block content %}
+<section class="ftco-section">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="text-center mb-4">DATA SEKOLAH</h4>
+				<div class="table-wrap text-b">
+					<table class="table">
+					<thead style="background-color: rgb(0, 132, 255);">
+					  <tr>
+						
+              <th scope="col">Npsn</th>
+              <th scope="col">Nama SMK</th>
+              <th scope="col">Email</th>
+              <th scope="col">Status</th>
+              <th scope="col">Alamat</th>
+              <th scope="col">Kabupatan/Kota</th>
+              <th scope="col">Kecamatan</th>
+              <th scope="col">Telp</th>
+
+					  </tr>
+					</thead>
+					<tbody>
+            {% for sekolah in sekolahs %}
+          
+            <tr>
+              <td> {{sekolah.npsn}} </td>
+              <td> {{sekolah.nama_smk}} </td>
+              <td> {{sekolah.email}} </td>
+              <td> {{sekolah.Status}} </td>
+              <td> {{sekolah.alamat}} </td>
+              <td> {{sekolah.kabupaten_kota}} </td>
+              <td> {{sekolah.kecamatan}} </td>
+              <td> {{sekolah.telp}} </td>
+            </tr>
+            {% endfor %}
+					</tbody>
+				  </table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+
+
+
+
+
+
+
+    

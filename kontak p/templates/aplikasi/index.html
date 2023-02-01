@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/faces/faces.png' %}" class="card-img-top p-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center " style="font-weight: 700; margin-top:-50px ">Siswa</h5>
+          <a href="siswa/" class="btn btn-secondary w-50 " style="margin-left:  24%; margin-top: 17px">Open</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/faces/skull.png' %}" class="card-img-top p-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center pb-3" style="font-weight: 700; margin-top:-50px  ">Sekolah</h5>
+
+          <a href="sekolah/" class="btn btn-secondary w-50 btn-center " style="margin-left:  24%; ">Open</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/faces/facet.png' %}" class="card-img-top p-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center pb-3" style="font-weight: 700; margin-top:-50px  ">Perusahaan</h5>
+
+          <a href="perusahaan/" class="btn btn-secondary w-50 " style="margin-left:  24%">Open</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> 
+{% endblock %}
